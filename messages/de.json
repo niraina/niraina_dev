@@ -7,5 +7,11 @@
     "fr": "Französisch",
     "en": "Englisch",
     "de": "Deutsch"
+  },
+  "hero":{
+    "title": "Hallo, ich bin",
+    "poste": "Frontend-Entwickler und Web-Integrator",
+    "contact": "Kontaktieren Sie mich",
+    "cv": "Laden Sie meinen Lebenslauf herunter"
   }
 }
