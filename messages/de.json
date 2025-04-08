@@ -1,0 +1,11 @@
+{
+  "homepage": {
+    "title": "Startseite",
+    "description": "Willkommen auf der Startseite unserer Anwendung. Hier finden Sie die neuesten Updates und Nachrichten."
+  },
+  "local": {
+    "fr": "Französisch",
+    "en": "Englisch",
+    "de": "Deutsch"
+  }
+}

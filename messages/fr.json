@@ -1,0 +1,11 @@
+{
+  "homepage": {
+    "title": "Accueil",
+    "description": "Bienvenue sur la page d'accueil de notre application. Ici, vous pouvez trouver les dernières mises à jour et actualités."
+  },
+  "local": {
+    "fr": "Français",
+    "en": "Anglais",
+    "de": "Allemand"
+  }
+}
