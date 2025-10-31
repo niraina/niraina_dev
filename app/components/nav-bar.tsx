@@ -18,7 +18,7 @@ export const Navbar = () => {
   ];
 
   return (
-    <header className="w-full border-b">
+    <header className="w-full border-b bg-white dark:bg-gray-900 fixed top-0 z-50">
       <div className="container mx-auto flex items-center justify-between p-4">
         <Link href="/" className="text-xl font-bold">
           Niraina

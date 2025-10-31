@@ -11,7 +11,7 @@ const Hero = () => {
     <div className="container mx-auto px-3">
       <div className="flex flex-wrap items-center justify-center gap-3 md:h-[87vh] h-full md:py-0 py-10">
         <div className={`${style["hero-title"]} md:w-[48%] w-full relative`}>
-          <h1 className="md:text-[46px] text-[16px] leading-none font-bold animate__animated animate__fadeInUp">{t('title')} <br/><span className="text-[#00ADB5] uppercase md:text-[96px] text-[56px]">Niraina</span></h1>
+          <h1 className="md:text-[36px] text-[16px] leading-none font-bold animate__animated animate__fadeInUp">{t('title')} <br/><span className="text-[#00ADB5] md:text-[96px] text-[56px] pt-2">Niraina</span></h1>
           <h2 className="md:ms-2 ms-0 py-3 animate__animated animate__fadeInUp animate__delay-1s">{t('poste')}</h2>
           <div className="flex items-center gap-3 md:mt-12 mt-6 md:ms-2 ms-0 animate__animated animate__fadeInUp animate__delay-1s">
             <Button className="bg-[#00ADB5] text-white hover:bg-[#006db5]">{t('contact')}</Button>
