@@ -1,3 +1,4 @@
+import About from '../components/about';
 import { Experiences } from '../components/experiences';
 import { Skills } from '../components/skills';
 import HeroAnimate from '../components/ui/hero-animate';
@@ -9,6 +10,7 @@ export default function HomePage() {
     <div className='dark:bg-black bg-black flex flex-col'>
       <Navbar/>
       <HeroAnimate/>
+      <About />
       <Skills/>
       <Experiences />
     </div>

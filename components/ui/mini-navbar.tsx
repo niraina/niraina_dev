@@ -1,10 +1,10 @@
 "use client";
 
 import { LanguageSwitcher } from '@/app/components/language-switcher';
-import { ModeToggle } from '@/app/components/toggle-mode';
 import React, { useState, useEffect, useRef } from 'react';
 import { Avatar, AvatarFallback, AvatarImage } from './avatar';
 import Link from 'next/link';
+import { Button } from './button';
 
 const AnimatedNavLink = ({ href, children }: { href: string; children: React.ReactNode }) => {
   const defaultTextColor = 'text-gray-300';
@@ -51,7 +51,7 @@ export function Navbar() {
   }, [isOpen]);
 
   const logoElement = (
-    <Link href="https://github.com/niraina" target='_blank' rel="nofollow" className="relative w-5 h-5 flex items-center justify-center">
+    <Link href="https://github.com/niraina" target="_blank" rel="nofollow" className="relative w-5 h-5 flex items-center justify-center">
       <Avatar>
         <AvatarImage src="https://avatars.githubusercontent.com/u/77910897?v=4" />
         <AvatarFallback>NA</AvatarFallback>
@@ -63,7 +63,11 @@ export function Navbar() {
     { label: '@niraina', href: '#' }
   ];
 
-  const loginButtonElement = (<ModeToggle />);
+  const loginButtonElement = (
+  <Link href="/niraina_andriamiarintsoa.pdf" target="_blank" rel="noopener noreferrer">
+    <Button variant="outline" size="icon">CV</Button>
+  </Link>
+  );
 
   const signupButtonElement = (
     <div className="relative group w-full sm:w-auto">

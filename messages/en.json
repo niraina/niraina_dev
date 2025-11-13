@@ -47,5 +47,9 @@
         "technologie": "WordPress, Shopify, Elementor"
       }
     }
+  },
+  "about":{
+    "title": "About me",
+    "description": "As a web development professional, I began my career as a web integrator in 2021, mastering technologies such as HTML, CSS, jQuery, and WordPress. In 2023, I transitioned to a frontend developer role, working with React.js and TypeScript. Since then, I have continued to grow as both a frontend developer and web integrator, combining technical precision with creative design to build innovative and visually engaging web experiences."
   }
 }

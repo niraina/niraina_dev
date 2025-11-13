@@ -2,11 +2,10 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { Menu } from "lucide-react";
+import { Mail, Menu, Phone } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import { LanguageSwitcher } from "./language-switcher";
-import { ModeToggle } from "./toggle-mode";
 
 export const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -37,8 +36,15 @@ export const Navbar = () => {
           ))}
         </nav>
         <div className="flex items-center gap-2">
+          <div className="flex justify-center gap-1 py-2">
+            <Link href="mailto: andriamiarintsoaniraina@gmail.com">
+              <Mail className="text-white text-[24px] hover:text-[26px] transition-all duration-300 ease-in-out"/>
+            </Link>
+            <Link href="https://wa.me/261344408507" target="_blank" rel="noopener noreferrer">
+              <Phone className="text-white text-[24px] hover:text-[26px] transition-all duration-300 ease-in-out"/>
+            </Link>
+          </div>
           <LanguageSwitcher />
-          <ModeToggle />
         </div>
 
         {/* Mobile menu button */}
