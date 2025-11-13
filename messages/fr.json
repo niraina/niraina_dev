@@ -30,5 +30,22 @@
     "ui_ux": "Principes de conception UI/UX pour créer des interfaces utilisateur intuitives et engageantes qui améliorent l'expérience et la satisfaction des utilisateurs.",
     "ui_ux_date": "2021 - Présent",
     "title": "Compétences"
+  },
+  "experiences": {
+    "title": "Expériences",
+    "description": {
+      "wordpress": {
+        "title": "Intégration HTML personnalisée basée sur le design + Intégration et optimisation sur WordPress (Blog, site vitrine, e-commerce...)",
+        "technologie": "PHP, Javascript, HTML, CSS, Sass, Bootstrap, jQuery, ACF Pro, woocommerce"
+      },
+      "frontend": {
+        "title": "Développement et intégration d'API REST sur React js (ERP, site vitrine, Ecommerce)",
+        "technologie": "React.js, Next.js, Javascript, Typescript, Antd, Tailwind, shadcn/ui, flowbite, scss..."
+      },
+      "cms": {
+        "title": "Intégration et personnalisation de sites web sur diverses plateformes CMS (WordPress, Shopify)",
+        "technologie": "WordPress, Shopify, Elementor"
+      }
+    }
   }
 }

@@ -23,12 +23,29 @@
     "wordpress_date": "2021 - Present",
     "frontend": "Frontend development with React, Next.js, Tailwind CSS, and TypeScript for building responsive and user-friendly web applications.",
     "frontend_date": "2023 - Present",
-    "html_css": "HTML5 and CSS3 for creating semantic, accessible, and visually appealing web pages with responsive design principles.",
+    "html_css": "HTML5 and CSS3 for creating semantic, accessible, and visually appealing web pages with responsive design principles.)",
     "html_css_date": "2021 - Present",
     "git": "Version control using Git and GitHub for efficient collaboration, code management, and deployment workflows.",
     "git_date": "2021 - Present",
     "ui_ux": "UI/UX design principles to create intuitive and engaging user interfaces that enhance user experience and satisfaction.",
     "ui_ux_date": "2021 - Present",
     "title": "Skills"
+  },
+  "experiences": {
+    "title": "Experiences",
+    "description": {
+      "wordpress": {
+        "title": "Custom HTML integration based on the design + Integration and optimization on WordPress (Blog, showcase website, e-commerce...)",
+        "technologie": "PHP, Javascript, HTML, CSS, Sass, Bootstrap, jQuery, ACF Pro, woocommerce"
+      },
+      "frontend": {
+        "title": "REST API development and integration on React js (ERP, Showcase website, Ecommerce)",
+        "technologie": "React.js, Next.js, Javascript, Typescript, Antd, Tailwind, shadcn/ui, flowbite, scss..."
+      },
+      "cms": {
+        "title": "Website integration and customization on various CMS platforms (WordPress, Shopify)",
+        "technologie": "WordPress, Shopify, Elementor"
+      }
+    }
   }
 }

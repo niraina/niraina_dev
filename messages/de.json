@@ -30,5 +30,22 @@
     "ui_ux": "UI/UX-Designprinzipien zur Erstellung intuitiver und ansprechender Benutzeroberflächen, die die Benutzererfahrung und -zufriedenheit verbessern.",
     "ui_ux_date": "2021 - Gegenwart",
     "title": "Fähigkeiten"
+  },
+  "experiences": {
+    "title": "Erfahrungen",
+    "description": {
+      "wordpress": {
+        "title": "Benutzerdefinierte HTML-Integration basierend auf dem Design + Integration und Optimierung auf WordPress (Blog, Showcase-Website, E-Commerce...)",
+        "technologie": "PHP, Javascript, HTML, CSS, Sass, Bootstrap, jQuery, ACF Pro, woocommerce"
+      },
+      "frontend": {
+        "title": "REST-API-Entwicklung und -Integration auf React js (ERP, Showcase-Website, E-Commerce)",
+        "technologie": "React.js, Next.js, Javascript, Typescript, Antd, Tailwind, shadcn/ui, flowbite, scss..."
+      },
+      "cms": {
+        "title": "Website-Integration und -Anpassung auf verschiedenen CMS-Plattformen (WordPress, Shopify)",
+        "technologie": "WordPress, Shopify, Elementor"
+      }
+    }
   }
 }
