@@ -1,7 +1,7 @@
 {
   "homepage": {
     "title": "Home",
-    "description": "Welcome to the homepage of our application. Here you can find the latest updates and news."
+    "description": "Experienced, innovative and proactive Front-end Developer with strong expertise in building dynamic, scalable websites and applications. Skilled in delivering elegant and user-focused digital solutions."
   },
   "local": {
     "fr": "French",
@@ -13,5 +13,22 @@
     "poste": "Frontend Developer and Web Integrator",
     "contact": "Contact me",
     "cv": "Download my CV"
+  },
+  "poste":{
+    "frontend": "Frontend Developer",
+    "integrateur": "Web Integrator"
+  },
+  "skills": {
+    "wordpress": "WordPress integration, dynamic implementation, and custom theme & block development using ACF Pro (Blog, Showcase, E-commerce, ...)",
+    "wordpress_date": "2021 - Present",
+    "frontend": "Frontend development with React, Next.js, Tailwind CSS, and TypeScript for building responsive and user-friendly web applications.",
+    "frontend_date": "2023 - Present",
+    "html_css": "HTML5 and CSS3 for creating semantic, accessible, and visually appealing web pages with responsive design principles.",
+    "html_css_date": "2021 - Present",
+    "git": "Version control using Git and GitHub for efficient collaboration, code management, and deployment workflows.",
+    "git_date": "2021 - Present",
+    "ui_ux": "UI/UX design principles to create intuitive and engaging user interfaces that enhance user experience and satisfaction.",
+    "ui_ux_date": "2021 - Present",
+    "title": "Skills"
   }
 }

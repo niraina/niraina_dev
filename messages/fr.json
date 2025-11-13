@@ -1,7 +1,7 @@
 {
   "homepage": {
     "title": "Accueil",
-    "description": "Bienvenue sur la page d'accueil de notre application. Ici, vous pouvez trouver les dernières mises à jour et actualités."
+    "description": "Développeur Frontend expérimenté, innovant et proactif, avec une solide expertise dans la création de sites web et d'applications dynamiques et évolutives. Compétent dans la livraison de solutions numériques élégantes et centrées sur l'utilisateur."
   },
   "local": {
     "fr": "Français",
@@ -13,5 +13,22 @@
     "poste": "Développeur Frontend et Intégrateur web",
     "contact": "Contactez-moi",
     "cv": "Télécharger mon CV"
+  },
+  "poste":{
+    "frontend": "Développeur Frontend",
+    "integrateur": "Intégrateur web"
+  },
+  "skills": {
+    "wordpress": "Intégration WordPress, mise en œuvre dynamique et développement de thèmes et blocs personnalisés utilisant ACF Pro (Blog, Vitrine, E-commerce, ...)",
+    "wordpress_date": "2021 - Présent",
+    "frontend": "Développement Frontend avec React, Next.js, Tailwind CSS et TypeScript pour créer des applications web réactives et conviviales.",
+    "frontend_date": "2023 - Présent",
+    "html_css": "HTML5 et CSS3 pour créer des pages web sémantiques, accessibles et visuellement attrayantes avec des principes de conception réactive.",
+    "html_css_date": "2021 - Présent",
+    "git": "Contrôle de version utilisant Git et GitHub pour une collaboration efficace, la gestion du code et les flux de travail de déploiement.",
+    "git_date": "2021 - Présent",
+    "ui_ux": "Principes de conception UI/UX pour créer des interfaces utilisateur intuitives et engageantes qui améliorent l'expérience et la satisfaction des utilisateurs.",
+    "ui_ux_date": "2021 - Présent",
+    "title": "Compétences"
   }
 }

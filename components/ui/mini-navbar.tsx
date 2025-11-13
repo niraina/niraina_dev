@@ -65,12 +65,7 @@ export function Navbar() {
 
   const signupButtonElement = (
     <div className="relative group w-full sm:w-auto">
-       <div className="absolute inset-0 -m-2 rounded-full
-                     hidden sm:block
-                     bg-gray-100
-                     opacity-40 filter blur-lg pointer-events-none
-                     transition-all duration-300 ease-out
-                     group-hover:opacity-60 group-hover:blur-xl group-hover:-m-3"></div>
+       <div className="absolute"></div>
        <LanguageSwitcher />
     </div>
   );

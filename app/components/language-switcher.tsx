@@ -27,9 +27,11 @@ export const LanguageSwitcher = () => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="outline" className="capitalize">
-          {currentLocale}
-        </Button>
+        <div className="flex justify-center">
+          <Button variant="outline" className="capitalize px-2.5">
+            {currentLocale}
+          </Button>
+        </div>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
         {routing.locales.map((locale) => (
