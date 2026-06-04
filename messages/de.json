@@ -8,17 +8,41 @@
     "en": "Englisch",
     "de": "Deutsch"
   },
-  "hero":{
+  "nav": {
+    "home": "Startseite",
+    "about": "Über mich",
+    "skills": "Fähigkeiten",
+    "experiences": "Erfahrungen",
+    "contact": "Kontakt"
+  },
+  "hero": {
     "title": "Hallo, ich bin",
-    "poste": "Frontend-Entwickler und Web-Integrator",
+    "available": "Verfügbar für Projekte",
+    "see_experiences": "Meine Erfahrungen →",
     "contact": "Kontaktieren Sie mich",
     "cv": "Mein Lebenslauf"
   },
-  "poste":{
+  "poste": {
     "frontend": "Frontend-Entwickler",
     "integrateur": "Web-Integrator"
   },
+  "about": {
+    "title": "Über mich",
+    "label": "Über mich",
+    "available": "Verfügbar",
+    "description": "Als Webentwicklungsprofi begann ich meine Karriere 2021 als Webintegrator und beherrschte Technologien wie HTML, CSS, jQuery und WordPress. Im Jahr 2023 wechselte ich in die Rolle des Frontend-Entwicklers und arbeitete mit React.js und TypeScript. Seitdem habe ich mich sowohl als Frontend-Entwickler als auch als Webintegrator weiterentwickelt und technische Präzision mit kreativem Design kombiniert, um innovative und visuell ansprechende Web-Erlebnisse zu schaffen."
+  },
   "skills": {
+    "title": "Fähigkeiten",
+    "label": "Fähigkeiten",
+    "stack_title": "Mein Tech-Stack",
+    "group_languages": "Sprachen",
+    "group_frontend": "Front-End",
+    "group_frameworks": "Frameworks & Libs",
+    "group_cms": "CMS",
+    "group_databases": "Datenbanken",
+    "group_design": "Design Tools",
+    "group_tools": "Werkzeuge",
     "wordpress": "WordPress-Integration, dynamische Implementierung und Entwicklung benutzerdefinierter Themes & Blöcke mit ACF Pro (Blog, Showcase, E-Commerce, ...)",
     "wordpress_date": "2021 - Gegenwart",
     "frontend": "Frontend-Entwicklung mit React, Next.js, Tailwind CSS und TypeScript zur Erstellung reaktionsschneller und benutzerfreundlicher Webanwendungen.",
@@ -28,11 +52,22 @@
     "git": "Versionskontrolle mit Git und GitHub für effiziente Zusammenarbeit, Codeverwaltung und Bereitstellungs-Workflows.",
     "git_date": "2021 - Gegenwart",
     "ui_ux": "UI/UX-Designprinzipien zur Erstellung intuitiver und ansprechender Benutzeroberflächen, die die Benutzererfahrung und -zufriedenheit verbessern.",
-    "ui_ux_date": "2021 - Gegenwart",
-    "title": "Fähigkeiten"
+    "ui_ux_date": "2021 - Gegenwart"
   },
   "experiences": {
     "title": "Erfahrungen",
+    "label": "Erfahrungen",
+    "present": "Gegenwart",
+    "projects_title": "Persönliche Projekte",
+    "livenexx_frontend_r1": "REST-API-Integration in React.js/Next.js-Anwendungen (ERP, Showcase-Website, E-Commerce)",
+    "livenexx_frontend_r2": "Entwicklung wiederverwendbarer UI-Komponenten und Optimierung der Frontend-Performance",
+    "livenexx_integrator_r1": "Benutzerdefinierte HTML/CSS-Integration aus Mockups",
+    "livenexx_integrator_r2": "WordPress-Integration & dynamische Implementierung (Blog, Showcase, E-Commerce...)",
+    "freelance_r1": "Frontend-Entwicklung mit React.js oder WordPress CMS",
+    "freelance_r2": "Leistungsoptimierung und responsive Implementierung",
+    "project_mern": "E-Commerce-Plattform mit React.js, Express.js & MongoDB (MERN)",
+    "project_vue": "E-Commerce-Website mit Vue 3 & Json-server",
+    "project_blog": "Blog mit Next.js",
     "description": {
       "wordpress": {
         "title": "Benutzerdefinierte HTML-Integration basierend auf dem Design + Integration und Optimierung auf WordPress (Blog, Showcase-Website, E-Commerce...)",
@@ -47,9 +82,5 @@
         "technologie": "WordPress, Shopify, Elementor"
       }
     }
-  },
-  "about":{
-    "title": "Über mich",
-    "description": "Als Webentwicklungsprofi begann ich meine Karriere 2021 als Webintegrator und beherrschte Technologien wie HTML, CSS, jQuery und WordPress. Im Jahr 2023 wechselte ich in die Rolle des Frontend-Entwicklers und arbeitete mit React.js und TypeScript. Seitdem habe ich mich sowohl als Frontend-Entwickler als auch als Webintegrator weiterentwickelt und technische Präzision mit kreativem Design kombiniert, um innovative und visuell ansprechende Web-Erlebnisse zu schaffen."
   }
 }

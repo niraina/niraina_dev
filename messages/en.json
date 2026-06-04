@@ -8,17 +8,41 @@
     "en": "English",
     "de": "German"
   },
-  "hero":{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "experiences": "Experiences",
+    "contact": "Contact"
+  },
+  "hero": {
     "title": "Hello, I am",
-    "poste": "Frontend Developer and Web Integrator",
+    "available": "Available for projects",
+    "see_experiences": "See my experiences →",
     "contact": "Contact me",
     "cv": "Download my CV"
   },
-  "poste":{
+  "poste": {
     "frontend": "Frontend Developer",
     "integrateur": "Web Integrator"
   },
+  "about": {
+    "title": "About me",
+    "label": "About",
+    "available": "Available",
+    "description": "As a web development professional, I began my career as a web integrator in 2021, mastering technologies such as HTML, CSS, jQuery, and WordPress. In 2023, I transitioned to a frontend developer role, working with React.js and TypeScript. Since then, I have continued to grow as both a frontend developer and web integrator, combining technical precision with creative design to build innovative and visually engaging web experiences."
+  },
   "skills": {
+    "title": "Skills",
+    "label": "Skills",
+    "stack_title": "My technical stack",
+    "group_languages": "Languages",
+    "group_frontend": "Front-End",
+    "group_frameworks": "Frameworks & Libs",
+    "group_cms": "CMS",
+    "group_databases": "Databases",
+    "group_design": "Design Tools",
+    "group_tools": "Tools",
     "wordpress": "WordPress integration, dynamic implementation, and custom theme & block development using ACF Pro (Blog, Showcase, E-commerce, ...)",
     "wordpress_date": "2021 - Present",
     "frontend": "Frontend development with React, Next.js, Tailwind CSS, and TypeScript for building responsive and user-friendly web applications.",
@@ -28,11 +52,22 @@
     "git": "Version control using Git and GitHub for efficient collaboration, code management, and deployment workflows.",
     "git_date": "2021 - Present",
     "ui_ux": "UI/UX design principles to create intuitive and engaging user interfaces that enhance user experience and satisfaction.",
-    "ui_ux_date": "2021 - Present",
-    "title": "Skills"
+    "ui_ux_date": "2021 - Present"
   },
   "experiences": {
     "title": "Experiences",
+    "label": "Experiences",
+    "present": "Present",
+    "projects_title": "Personal Projects",
+    "livenexx_frontend_r1": "REST API integration in React.js/Next.js applications (ERP, showcase site, e-commerce)",
+    "livenexx_frontend_r2": "Development of reusable UI components and frontend performance optimization",
+    "livenexx_integrator_r1": "Custom HTML/CSS integration from mockups",
+    "livenexx_integrator_r2": "WordPress integration & dynamic implementation (Blog, Showcase, E-commerce...)",
+    "freelance_r1": "Frontend development with React.js or WordPress CMS",
+    "freelance_r2": "Performance optimization and responsive implementation",
+    "project_mern": "E-commerce platform with React.js, Express.js & MongoDB (MERN)",
+    "project_vue": "E-commerce site with Vue 3 & Json-server",
+    "project_blog": "Blog with Next.js",
     "description": {
       "wordpress": {
         "title": "Custom HTML integration based on the design + Integration and optimization on WordPress (Blog, showcase website, e-commerce...)",
@@ -47,9 +82,5 @@
         "technologie": "WordPress, Shopify, Elementor"
       }
     }
-  },
-  "about":{
-    "title": "About me",
-    "description": "As a web development professional, I began my career as a web integrator in 2021, mastering technologies such as HTML, CSS, jQuery, and WordPress. In 2023, I transitioned to a frontend developer role, working with React.js and TypeScript. Since then, I have continued to grow as both a frontend developer and web integrator, combining technical precision with creative design to build innovative and visually engaging web experiences."
   }
 }

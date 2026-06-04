@@ -1,204 +1,180 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Circle } from "lucide-react";
-import { cn } from "@/lib/utils";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
+import Image from "next/image";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { Mail } from "lucide-react";
+import { EMAIL, GIT, LINKEDIN } from "@/constant/social";
+import niraina from "@/app/assets/png/niraina.png";
 
-function ElegantShape({
-  className,
-  delay = 0,
-  width = 400,
-  height = 100,
-  rotate = 0,
-  gradient = "from-white/[0.08]",
-}: {
-  className?: string;
-  delay?: number;
-  width?: number;
-  height?: number;
-  rotate?: number;
-  gradient?: string;
-}) {
-  return (
-    <motion.div
-      initial={{
-        opacity: 0,
-        y: -150,
-        rotate: rotate - 15,
-      }}
-      animate={{
-        opacity: 1,
-        y: 0,
-        rotate: rotate,
-      }}
-      transition={{
-        duration: 2.4,
-        delay,
-        ease: [0.23, 0.86, 0.39, 0.96],
-        opacity: { duration: 1.2 },
-      }}
-      className={cn("absolute", className)}
-    >
-      <motion.div
-        animate={{
-          y: [0, 15, 0],
-        }}
-        transition={{
-          duration: 12,
-          repeat: Number.POSITIVE_INFINITY,
-          ease: "easeInOut",
-        }}
-        style={{
-          width,
-          height,
-        }}
-        className="relative"
-      >
-        <div
-          className={cn(
-            "absolute inset-0 rounded-full",
-            "bg-gradient-to-r to-transparent",
-            gradient,
-            "backdrop-blur-[2px] border-2 border-white/[0.15]",
-            "shadow-[0_8px_32px_0_rgba(255,255,255,0.1)]",
-            "after:absolute after:inset-0 after:rounded-full",
-            "after:bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.2),transparent_70%)]"
-          )}
-        />
-      </motion.div>
-    </motion.div>
-  );
-}
+const fadeUp = (delay: number) => ({
+  hidden: { opacity: 0, y: 30 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.8, delay, ease: [0.25, 0.4, 0.25, 1] as const },
+  },
+});
 
 function HeroGeometric({
-  title1 = "Elevate Your Digital Vision",
-  title2 = "Crafting Exceptional Websites",
+  title1 = "Niraina",
 }: {
   badge?: string;
   title1?: string;
   title2?: string;
 }) {
-  const fadeUpVariants = {
-    hidden: { opacity: 0, y: 30 },
-    visible: (i: number) => ({
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 1,
-        delay: 0.5 + i * 0.2,
-        ease: [0.25, 0.4, 0.25, 1] as const, // ✅ ici la clé
-      },
-    }),
-  };
-
-  const poste = useTranslations('poste');
-  const homepage = useTranslations('homepage');
+  const poste = useTranslations("poste");
+  const homepage = useTranslations("homepage");
+  const hero = useTranslations("hero");
 
   return (
-    <div className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-[#030303]">
-      <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/[0.05] via-transparent to-rose-500/[0.05] blur-3xl" />
-
-      <div className="absolute inset-0 overflow-hidden">
-        <ElegantShape
-          delay={0.3}
-          width={600}
-          height={140}
-          rotate={12}
-          gradient="from-indigo-500/[0.15]"
-          className="left-[-10%] md:left-[-5%] top-[15%] md:top-[20%]"
-        />
-
-        <ElegantShape
-          delay={0.5}
-          width={500}
-          height={120}
-          rotate={-15}
-          gradient="from-rose-500/[0.15]"
-          className="right-[-5%] md:right-[0%] top-[70%] md:top-[75%]"
-        />
-
-        <ElegantShape
-          delay={0.4}
-          width={300}
-          height={80}
-          rotate={-8}
-          gradient="from-violet-500/[0.15]"
-          className="left-[5%] md:left-[10%] bottom-[5%] md:bottom-[10%]"
-        />
-
-        <ElegantShape
-          delay={0.6}
-          width={200}
-          height={60}
-          rotate={20}
-          gradient="from-amber-500/[0.15]"
-          className="right-[15%] md:right-[20%] top-[10%] md:top-[15%]"
-        />
-
-        <ElegantShape
-          delay={0.7}
-          width={150}
-          height={40}
-          rotate={-25}
-          gradient="from-cyan-500/[0.15]"
-          className="left-[20%] md:left-[25%] top-[5%] md:top-[10%]"
-        />
-      </div>
-
-      <div className="relative z-10 container mx-auto px-4 md:px-6">
-        <div className="max-w-3xl mx-auto text-center">
-          <div className="flex justify-center items-center gap-1.5">
+    <section
+      id="home"
+      className="min-h-screen flex items-center justify-center pt-20 pb-16 px-6"
+    >
+      <div className="max-w-6xl w-full mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-12 items-center">
+          {/* Text content */}
+          <div>
+            {/* Status badge */}
             <motion.div
-              custom={0}
-              variants={fadeUpVariants}
+              variants={fadeUp(0.1)}
               initial="hidden"
               animate="visible"
-              className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/[0.03] border border-white/[0.08] mb-8 md:mb-12"
+              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/[0.06] border border-white/[0.1] mb-6 backdrop-blur-sm"
             >
-              <Circle className="h-2 w-2 fill-green-500/80" />
-              <span className="text-sm text-white/60 tracking-wide">
-                {poste('frontend')} & {poste('integrateur')}
+              <span className="w-2 h-2 rounded-full bg-emerald-400 shadow-[0_0_8px_#34d399] animate-pulse" />
+              <span className="text-xs font-semibold text-white/55 tracking-wide">
+                {hero("available")}
               </span>
+            </motion.div>
+
+            {/* Name */}
+            <motion.h1
+              variants={fadeUp(0.2)}
+              initial="hidden"
+              animate="visible"
+              className="text-5xl sm:text-6xl md:text-7xl font-black tracking-tight leading-[1.05] mb-5"
+            >
+              <span className="text-white/90">{hero("title")}</span>
+              <br />
+              <span className="bg-gradient-to-r from-violet-400 to-blue-400 bg-clip-text text-transparent">
+                {title1} 👋
+              </span>
+            </motion.h1>
+
+            {/* Role */}
+            <motion.p
+              variants={fadeUp(0.3)}
+              initial="hidden"
+              animate="visible"
+              className="text-base sm:text-lg text-white/50 font-medium mb-4"
+            >
+              {poste("frontend")} &amp; {poste("integrateur")}
+            </motion.p>
+
+            {/* Description */}
+            <motion.p
+              variants={fadeUp(0.4)}
+              initial="hidden"
+              animate="visible"
+              className="max-w-lg text-white/40 leading-relaxed mb-8"
+            >
+              {homepage("description")}
+            </motion.p>
+
+            {/* Actions */}
+            <motion.div
+              variants={fadeUp(0.5)}
+              initial="hidden"
+              animate="visible"
+              className="flex flex-wrap gap-3 mb-8"
+            >
+              <a
+                href="#experiences"
+                className="px-6 py-3 rounded-full bg-gradient-to-r from-violet-500 to-blue-500 text-white text-sm font-bold shadow-[0_4px_20px_rgba(139,92,246,0.4)] hover:shadow-[0_6px_30px_rgba(139,92,246,0.6)] hover:-translate-y-0.5 transition-all"
+              >
+                {hero("see_experiences")}
+              </a>
+              <a
+                href="#contact"
+                className="px-6 py-3 rounded-full bg-white/[0.06] border border-white/[0.15] text-white text-sm font-bold backdrop-blur-sm hover:bg-white/10 hover:-translate-y-0.5 transition-all"
+              >
+                {hero("contact")}
+              </a>
+            </motion.div>
+
+            {/* Social links */}
+            <motion.div
+              variants={fadeUp(0.6)}
+              initial="hidden"
+              animate="visible"
+              className="flex gap-3"
+            >
+              <Link
+                href={LINKEDIN}
+                target="_blank"
+                className="w-10 h-10 flex items-center justify-center rounded-full bg-white/[0.06] border border-white/[0.1] text-white/60 hover:text-white hover:bg-white/10 transition-all"
+              >
+                <FaLinkedin size={18} />
+              </Link>
+              <Link
+                href={GIT}
+                target="_blank"
+                className="w-10 h-10 flex items-center justify-center rounded-full bg-white/[0.06] border border-white/[0.1] text-white/60 hover:text-white hover:bg-white/10 transition-all"
+              >
+                <FaGithub size={18} />
+              </Link>
+              <Link
+                href={`mailto:${EMAIL}`}
+                className="w-10 h-10 flex items-center justify-center rounded-full bg-white/[0.06] border border-white/[0.1] text-white/60 hover:text-white hover:bg-white/10 transition-all"
+              >
+                <Mail size={18} />
+              </Link>
             </motion.div>
           </div>
 
+          {/* Avatar */}
           <motion.div
-            custom={1}
-            variants={fadeUpVariants}
+            variants={fadeUp(0.3)}
             initial="hidden"
             animate="visible"
+            className="hidden md:flex items-center justify-center"
           >
-            <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold mb-6 md:mb-8 tracking-tight">
-              <span className="bg-clip-text text-transparent bg-gradient-to-b from-white to-white/80">
-                {title1}
-              </span>
-              <br />
-              <span
-                className={cn(
-                  "bg-clip-text text-transparent bg-gradient-to-r from-indigo-300 via-white/90 to-rose-300 "
-                )}
+            <div className="relative">
+              {/* Spinning ring */}
+              <div
+                className="absolute inset-[-14px] rounded-full border border-white/10"
+                style={{ animation: "spin 20s linear infinite" }}
               >
-                {title2}
-              </span>
-            </h1>
-          </motion.div>
-
-          <motion.div
-            custom={2}
-            variants={fadeUpVariants}
-            initial="hidden"
-            animate="visible"
-          >
-            <p className="text-base sm:text-lg md:text-xl text-white/40 mb-8 leading-relaxed font-light tracking-wide max-w-xl mx-auto px-4">
-              {homepage('description')}
-            </p>
+                <div
+                  className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-violet-400"
+                  style={{ boxShadow: "0 0 12px #a78bfa" }}
+                />
+              </div>
+              {/* Photo */}
+              <div className="w-52 h-52 rounded-full overflow-hidden border-2 border-white/20 shadow-[0_0_60px_rgba(139,92,246,0.25)]">
+                <Image
+                  src={niraina}
+                  alt="Niraina"
+                  width={208}
+                  height={208}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
           </motion.div>
         </div>
       </div>
 
-      <div className="absolute inset-0 bg-gradient-to-t from-[#030303] via-transparent to-[#030303]/80 pointer-events-none" />
-    </div>
+      <style jsx>{`
+        @keyframes spin {
+          to { transform: rotate(360deg); }
+        }
+      `}</style>
+    </section>
   );
 }
 
