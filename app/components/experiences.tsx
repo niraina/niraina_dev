@@ -54,13 +54,13 @@ export function Experiences() {
       <div className="max-w-6xl mx-auto">
         {/* Section label */}
         <div className="flex items-center gap-2 mb-3">
-          <span className="w-5 h-0.5 bg-violet-400 rounded" />
-          <span className="text-xs font-bold tracking-widest uppercase text-violet-400">
+          <span className="w-5 h-0.5 bg-violet-500 dark:bg-violet-400 rounded" />
+          <span className="text-xs font-bold tracking-widest uppercase text-violet-600 dark:text-violet-400">
             {t("label")}
           </span>
         </div>
 
-        <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-10">
+        <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 dark:text-white mb-10">
           {t("title")}
         </h2>
 
@@ -68,35 +68,35 @@ export function Experiences() {
           {experiences.map((exp, i) => (
             <div
               key={i}
-              className="relative bg-white/[0.04] border border-white/[0.08] rounded-2xl backdrop-blur-sm p-6 hover:bg-white/[0.07] hover:border-white/[0.14] hover:-translate-y-1 transition-all duration-300 overflow-hidden"
+              className="relative bg-white dark:bg-white/[0.04] border border-gray-100 dark:border-white/[0.08] rounded-2xl shadow-sm dark:shadow-none p-6 hover:border-violet-200 dark:hover:border-white/[0.14] hover:shadow-md dark:hover:bg-white/[0.07] hover:-translate-y-1 transition-all duration-300 overflow-hidden"
             >
               {/* Top accent line */}
               <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-violet-500 to-blue-500 rounded-t-2xl" />
 
-              <p className="text-xs font-semibold text-violet-400 mb-1">
+              <p className="text-xs font-semibold text-violet-600 dark:text-violet-400 mb-1">
                 {exp.company} · {exp.period}
               </p>
-              <h3 className="text-base font-bold text-white mb-0.5">
+              <h3 className="text-base font-bold text-gray-900 dark:text-white mb-0.5">
                 {exp.role}
               </h3>
-              <p className="text-xs text-white/40 mb-4">{exp.location}</p>
+              <p className="text-xs text-gray-400 dark:text-white/40 mb-4">{exp.location}</p>
 
               <ul className="space-y-2 mb-4">
                 {exp.responsibilities.map((r, j) => (
-                  <li key={j} className="flex gap-2 text-xs text-white/55 leading-relaxed">
-                    <span className="text-violet-400 mt-0.5 flex-shrink-0">•</span>
+                  <li key={j} className="flex gap-2 text-xs text-gray-500 dark:text-white/55 leading-relaxed">
+                    <span className="text-violet-500 dark:text-violet-400 mt-0.5 flex-shrink-0">•</span>
                     {r}
                   </li>
                 ))}
               </ul>
 
-              <p className="text-xs text-white/40">
-                <span className="text-white/60 font-semibold">Tech : </span>
+              <p className="text-xs text-gray-400 dark:text-white/40">
+                <span className="text-gray-600 dark:text-white/60 font-semibold">Tech : </span>
                 {exp.tech}
               </p>
               {exp.database && (
-                <p className="text-xs text-white/40 mt-1">
-                  <span className="text-white/60 font-semibold">DB : </span>
+                <p className="text-xs text-gray-400 dark:text-white/40 mt-1">
+                  <span className="text-gray-600 dark:text-white/60 font-semibold">DB : </span>
                   {exp.database}
                 </p>
               )}
@@ -105,17 +105,17 @@ export function Experiences() {
         </div>
 
         {/* Personal projects */}
-        <div className="bg-white/[0.04] border border-white/[0.08] rounded-2xl backdrop-blur-sm p-6">
-          <h3 className="text-sm font-bold text-white mb-4">
+        <div className="bg-white dark:bg-white/[0.04] border border-gray-100 dark:border-white/[0.08] rounded-2xl shadow-sm dark:shadow-none p-6">
+          <h3 className="text-sm font-bold text-gray-900 dark:text-white mb-4">
             🚀 {t("projects_title")}
           </h3>
           <div className="flex flex-wrap gap-3">
             {projects.map((p, i) => (
               <span
                 key={i}
-                className="flex items-center gap-2 text-xs text-white/60 bg-white/[0.06] border border-white/[0.1] rounded-full px-4 py-2"
+                className="flex items-center gap-2 text-xs text-violet-700 dark:text-white/60 bg-violet-50 dark:bg-white/[0.06] border border-violet-200/60 dark:border-white/[0.1] rounded-full px-4 py-2 font-medium"
               >
-                <span className="w-1.5 h-1.5 rounded-full bg-violet-400" />
+                <span className="w-1.5 h-1.5 rounded-full bg-violet-500 dark:bg-violet-400" />
                 {p}
               </span>
             ))}

@@ -48,14 +48,14 @@ export function Skills() {
       <div className="max-w-6xl mx-auto">
         {/* Section label */}
         <div className="flex items-center gap-2 mb-3">
-          <span className="w-5 h-0.5 bg-violet-400 rounded" />
-          <span className="text-xs font-bold tracking-widest uppercase text-violet-400">
+          <span className="w-5 h-0.5 bg-violet-500 dark:bg-violet-400 rounded" />
+          <span className="text-xs font-bold tracking-widest uppercase text-violet-600 dark:text-violet-400">
             {t("label")}
           </span>
         </div>
 
-        <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-10">
-          <span className="bg-gradient-to-r from-violet-400 to-blue-400 bg-clip-text text-transparent">
+        <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 dark:text-white mb-10">
+          <span className="bg-gradient-to-r from-violet-600 to-blue-500 dark:from-violet-400 dark:to-blue-400 bg-clip-text text-transparent">
             {t("stack_title")}
           </span>
         </h2>
@@ -64,9 +64,9 @@ export function Skills() {
           {skillGroups.map((group) => (
             <div
               key={group.label}
-              className="bg-white/[0.04] border border-white/[0.08] rounded-2xl backdrop-blur-sm p-5 hover:bg-white/[0.07] hover:border-white/[0.14] hover:-translate-y-0.5 transition-all duration-300"
+              className="bg-white dark:bg-white/[0.04] border border-gray-100 dark:border-white/[0.08] rounded-2xl shadow-sm dark:shadow-none p-5 hover:border-violet-200 dark:hover:border-white/[0.14] hover:shadow-md dark:hover:bg-white/[0.07] hover:-translate-y-0.5 transition-all duration-300"
             >
-              <h3 className="flex items-center gap-2 text-sm font-bold text-white mb-4">
+              <h3 className="flex items-center gap-2 text-sm font-bold text-gray-800 dark:text-white mb-4">
                 <span>{group.icon}</span>
                 {group.label}
               </h3>
@@ -74,7 +74,7 @@ export function Skills() {
                 {group.chips.map((chip) => (
                   <span
                     key={chip}
-                    className="px-3 py-1.5 rounded-full bg-white/[0.06] border border-white/[0.12] text-xs font-semibold text-white/80 hover:bg-violet-500/15 hover:border-violet-400/30 hover:text-violet-300 transition-all cursor-default"
+                    className="px-3 py-1.5 rounded-full bg-violet-50 dark:bg-white/[0.06] border border-violet-200/60 dark:border-white/[0.12] text-xs font-semibold text-violet-700 dark:text-white/80 hover:bg-violet-100 dark:hover:bg-violet-500/15 hover:border-violet-300 dark:hover:border-violet-400/30 hover:text-violet-800 dark:hover:text-violet-300 transition-all cursor-default"
                   >
                     {chip}
                   </span>

@@ -31,14 +31,14 @@ export const Navbar = () => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-[#08080f]/90 backdrop-blur-2xl border-b border-white/10 shadow-lg"
-          : "bg-[#08080f]/70 backdrop-blur-xl border-b border-white/5"
+          ? "bg-white/95 dark:bg-[#08080f]/90 backdrop-blur-2xl border-b border-gray-200 dark:border-white/10 shadow-[0_2px_20px_rgba(0,0,0,0.06)] dark:shadow-none"
+          : "bg-white/70 dark:bg-[#08080f]/70 backdrop-blur-xl border-b border-gray-100/80 dark:border-white/5"
       }`}
     >
       <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
         {/* Logo */}
-        <Link href="/" className="text-xl font-extrabold text-white tracking-tight">
-          n<span className="text-violet-400">.</span>dev
+        <Link href="/" className="text-xl font-extrabold text-gray-900 dark:text-white tracking-tight">
+          n<span className="text-violet-500 dark:text-violet-400">.</span>dev
         </Link>
 
         {/* Desktop nav */}
@@ -47,7 +47,7 @@ export const Navbar = () => {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-white/55 hover:text-white transition-colors duration-200"
+              className="text-sm font-medium text-gray-500 dark:text-white/55 hover:text-gray-900 dark:hover:text-white transition-colors duration-200"
             >
               {link.label}
             </a>
@@ -58,7 +58,7 @@ export const Navbar = () => {
         <div className="flex items-center gap-2">
           <button
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-            className="w-9 h-9 flex items-center justify-center rounded-full border border-white/10 bg-white/5 text-white/60 hover:text-white hover:bg-white/10 transition-all"
+            className="w-9 h-9 flex items-center justify-center rounded-full border border-gray-200 dark:border-white/10 bg-gray-100 dark:bg-white/5 text-gray-500 dark:text-white/60 hover:text-gray-900 dark:hover:text-white hover:bg-gray-200 dark:hover:bg-white/10 transition-all"
             aria-label="Toggle theme"
           >
             {theme === "dark" ? <Sun size={15} /> : <Moon size={15} />}
@@ -67,7 +67,7 @@ export const Navbar = () => {
 
           {/* Mobile menu button */}
           <button
-            className="md:hidden text-white/70 hover:text-white ml-1"
+            className="md:hidden text-gray-600 dark:text-white/70 hover:text-gray-900 dark:hover:text-white ml-1"
             onClick={() => setOpen(!open)}
           >
             {open ? <X size={22} /> : <Menu size={22} />}
@@ -77,14 +77,14 @@ export const Navbar = () => {
 
       {/* Mobile dropdown */}
       {open && (
-        <div className="md:hidden bg-[#08080f]/95 backdrop-blur-2xl border-t border-white/10 px-6 py-5">
+        <div className="md:hidden bg-white/95 dark:bg-[#08080f]/95 backdrop-blur-2xl border-t border-gray-200 dark:border-white/10 px-6 py-5">
           <nav className="flex flex-col gap-5">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
                 onClick={() => setOpen(false)}
-                className="text-sm font-medium text-white/60 hover:text-white transition-colors"
+                className="text-sm font-medium text-gray-600 dark:text-white/60 hover:text-gray-900 dark:hover:text-white transition-colors"
               >
                 {link.label}
               </a>
