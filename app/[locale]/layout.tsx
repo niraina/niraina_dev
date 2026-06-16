@@ -5,14 +5,76 @@ import "./globals.css";
 import { ThemeProvider } from "../components/them-provider";
 import { Poppins } from "next/font/google";
 import "animate.css";
+import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 
-// 1. Configurer la font
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "500", "600"],
   variable: "--font-poppins",
   display: "swap",
 });
+
+const BASE_URL = "https://niraina-andriamiarintsoa.vercel.app";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "homepage" });
+
+  const title = "Niraina Andriamiarintsoa – Développeur Frontend";
+  const description = t("description");
+
+  return {
+    title: {
+      default: title,
+      template: `%s | Niraina Andriamiarintsoa`,
+    },
+    description,
+    metadataBase: new URL(BASE_URL),
+    alternates: {
+      canonical: `${BASE_URL}/${locale}`,
+      languages: {
+        fr: `${BASE_URL}/fr`,
+        en: `${BASE_URL}/en`,
+        de: `${BASE_URL}/de`,
+      },
+    },
+    openGraph: {
+      type: "website",
+      url: `${BASE_URL}/${locale}`,
+      title,
+      description,
+      siteName: "Niraina Andriamiarintsoa",
+      locale,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: { index: true, follow: true },
+    },
+    keywords: [
+      "développeur frontend",
+      "frontend developer",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "WordPress",
+      "Tailwind CSS",
+      "Madagascar",
+      "Antananarivo",
+      "Niraina",
+    ],
+  };
+}
 
 export default async function LocaleLayout({
   children,
