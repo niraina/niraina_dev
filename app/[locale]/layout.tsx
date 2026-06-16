@@ -18,6 +18,7 @@ const poppins = Poppins({
 
 const BASE_URL = "https://niraina-andriamiarintsoa.vercel.app";
 
+
 export async function generateMetadata({
   params,
 }: {
