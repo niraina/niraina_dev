@@ -41,6 +41,15 @@ export function Skills() {
       label: t("group_tools"),
       chips: ["Git", "GitHub", "Elementor", "WooCommerce", "ACF Pro"],
     },
+    {
+      icon: "🌍​",
+      label: t("group_lang.label"),
+      chips: [
+        t("group_lang.chips.0"),
+        t("group_lang.chips.1"),
+        t("group_lang.chips.2"),
+      ],
+    },
   ];
 
   return (

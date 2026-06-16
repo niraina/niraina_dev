@@ -73,7 +73,7 @@
     "email_placeholder": "your@email.com",
     "message_label": "Message",
     "message_placeholder": "Describe your project...",
-    "send_button": "Send ✉️",
+    "send_button": "Send ",
     "success": "Message sent successfully!"
   },
   "experiences": {

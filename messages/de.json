@@ -55,7 +55,7 @@
     "ui_ux_date": "2021 - Gegenwart",
     "group_lang": {
       "label": "Sprachen",
-      "chips": ["English", "French", "German"]
+      "chips": ["Englisch", "Französisch", "Deutsch"]
     }
   },
   "contact": {
@@ -73,7 +73,7 @@
     "email_placeholder": "ihre@email.com",
     "message_label": "Nachricht",
     "message_placeholder": "Beschreiben Sie Ihr Projekt...",
-    "send_button": "Senden ✉️",
+    "send_button": "Senden ",
     "success": "Nachricht erfolgreich gesendet!"
   },
   "experiences": {
