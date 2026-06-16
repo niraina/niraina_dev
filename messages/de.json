@@ -52,7 +52,29 @@
     "git": "Versionskontrolle mit Git und GitHub für effiziente Zusammenarbeit, Codeverwaltung und Bereitstellungs-Workflows.",
     "git_date": "2021 - Gegenwart",
     "ui_ux": "UI/UX-Designprinzipien zur Erstellung intuitiver und ansprechender Benutzeroberflächen, die die Benutzererfahrung und -zufriedenheit verbessern.",
-    "ui_ux_date": "2021 - Gegenwart"
+    "ui_ux_date": "2021 - Gegenwart",
+    "group_lang": {
+      "label": "Sprachen",
+      "chips": ["English", "French", "German"]
+    }
+  },
+  "contact": {
+    "label": "Kontakt",
+    "title": "Lass uns",
+    "title_highlight": "zusammenarbeiten",
+    "subtitle": "Haben Sie ein Projekt? Ich lese alle Nachrichten und antworte innerhalb von 24h.",
+    "stay_connected": "In Kontakt bleiben",
+    "availability": "Verfügbar für Freelance, Festanstellung und Kooperationen.",
+    "phone_label": "Telefon",
+    "location_label": "Standort",
+    "send_message": "Nachricht senden",
+    "name_label": "Name",
+    "name_placeholder": "Ihr Name",
+    "email_placeholder": "ihre@email.com",
+    "message_label": "Nachricht",
+    "message_placeholder": "Beschreiben Sie Ihr Projekt...",
+    "send_button": "Senden ✉️",
+    "success": "Nachricht erfolgreich gesendet!"
   },
   "experiences": {
     "title": "Erfahrungen",

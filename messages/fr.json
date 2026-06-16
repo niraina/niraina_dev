@@ -52,7 +52,29 @@
     "git": "Contrôle de version utilisant Git et GitHub pour une collaboration efficace, la gestion du code et les flux de travail de déploiement.",
     "git_date": "2021 - Présent",
     "ui_ux": "Principes de conception UI/UX pour créer des interfaces utilisateur intuitives et engageantes qui améliorent l'expérience et la satisfaction des utilisateurs.",
-    "ui_ux_date": "2021 - Présent"
+    "ui_ux_date": "2021 - Présent",
+    "group_lang": {
+      "label": "Langues",
+      "chips": ["Anglais", "Français", "Allemand"]
+    }
+  },
+  "contact": {
+    "label": "Contact",
+    "title": "Travaillons",
+    "title_highlight": "ensemble",
+    "subtitle": "Un projet en tête ? Je lis tous mes messages et réponds sous 24h.",
+    "stay_connected": "Restons connectés",
+    "availability": "Disponible pour freelance, CDI, et collaborations.",
+    "phone_label": "Téléphone",
+    "location_label": "Localisation",
+    "send_message": "Envoyer un message",
+    "name_label": "Nom",
+    "name_placeholder": "Votre nom",
+    "email_placeholder": "votre@email.com",
+    "message_label": "Message",
+    "message_placeholder": "Décrivez votre projet...",
+    "send_button": "Envoyer ✉️",
+    "success": "Message envoyé avec succès !"
   },
   "experiences": {
     "title": "Expériences",
