@@ -83,6 +83,9 @@ export async function generateMetadata({
     icons: {
       icon: icon.src,
     },
+    verification: {
+      google: "54ycNVdGpxpMZusAtHAuISSzoCdr7DLuC6-2W1szFP8",
+    },
   };
 }
 
