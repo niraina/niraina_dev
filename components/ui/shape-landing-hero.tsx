@@ -94,7 +94,7 @@ function HeroGeometric({
             >
               <a
                 href="#experiences"
-                className="px-6 py-3 rounded-full bg-gradient-to-r from-violet-600 to-blue-500 dark:from-violet-500 dark:to-blue-500 text-white text-sm font-bold shadow-[0_4px_20px_rgba(139,92,246,0.35)] hover:shadow-[0_6px_30px_rgba(139,92,246,0.55)] hover:-translate-y-0.5 transition-all"
+                className="px-6 py-3 rounded-full bg-gradient-to-r from-violet-900 to-blue-700 dark:from-violet-600 dark:to-blue-900 text-white text-sm font-bold shadow-[0_4px_20px_rgba(139,92,246,0.35)] hover:shadow-[0_6px_30px_rgba(139,92,246,0.55)] hover:-translate-y-0.5 transition-all"
               >
                 {hero("see_experiences")}
               </a>

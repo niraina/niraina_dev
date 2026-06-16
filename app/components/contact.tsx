@@ -111,7 +111,7 @@ export default function Contact() {
                     </span>
                     <div>
                       <div className="text-xs text-gray-400 dark:text-white/40 font-medium">{link.label}</div>
-                      <div className="text-sm text-gray-700 dark:text-white/80 font-semibold truncate">{link.value}</div>
+                      <div className="text-sm text-gray-700 dark:text-white/80 font-semibold break-all">{link.value}</div>
                     </div>
                   </a>
                 ) : (
@@ -124,7 +124,7 @@ export default function Contact() {
                     </span>
                     <div>
                       <div className="text-xs text-gray-400 dark:text-white/40 font-medium">{link.label}</div>
-                      <div className="text-sm text-gray-700 dark:text-white/80 font-semibold">{link.value}</div>
+                      <div className="text-sm text-gray-700 dark:text-white/80 font-semibold break-all">{link.value}</div>
                     </div>
                   </div>
                 )
@@ -181,7 +181,7 @@ export default function Contact() {
               </div>
               <button
                 type="submit"
-                className="w-full py-3 rounded-full bg-gradient-to-r from-violet-600 to-blue-500 dark:from-violet-500 dark:to-blue-500 text-white text-sm font-bold shadow-[0_4px_20px_rgba(139,92,246,0.35)] hover:shadow-[0_6px_30px_rgba(139,92,246,0.55)] hover:-translate-y-0.5 transition-all"
+                className="w-full py-3 rounded-full bg-gradient-to-r from-violet-900 to-blue-700 dark:from-violet-600 dark:to-blue-900 text-white text-sm font-bold shadow-[0_4px_20px_rgba(139,92,246,0.35)] hover:shadow-[0_6px_30px_rgba(139,92,246,0.55)] hover:-translate-y-0.5 transition-all"
               >
                 {t("send_button")}
               </button>

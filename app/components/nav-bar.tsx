@@ -38,7 +38,7 @@ export const Navbar = () => {
       <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
         {/* Logo */}
         <Link href="/" className="text-xl font-extrabold text-gray-900 dark:text-white tracking-tight">
-          n<span className="text-violet-500 dark:text-violet-400">.</span>dev
+          niraina<span className="text-violet-500 dark:text-violet-400">.</span>dev
         </Link>
 
         {/* Desktop nav */}

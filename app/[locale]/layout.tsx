@@ -7,6 +7,7 @@ import { Poppins } from "next/font/google";
 import "animate.css";
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
+import icon from "@/app/assets/favicon.ico"
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -23,9 +24,9 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "homepage" });
+  const t = await getTranslations({ locale, namespace: "referencement" });
 
-  const title = "Niraina Andriamiarintsoa – Développeur Frontend";
+  const title = t("title");
   const description = t("description");
 
   return {
@@ -64,6 +65,11 @@ export async function generateMetadata({
     keywords: [
       "développeur frontend",
       "frontend developer",
+      "web developer",
+      "webentwickler",
+      "JavaScript",
+      "TypeScript",
+      "développeur web",
       "React",
       "Next.js",
       "TypeScript",
@@ -73,6 +79,9 @@ export async function generateMetadata({
       "Antananarivo",
       "Niraina",
     ],
+    icons: {
+      icon: icon.src,
+    },
   };
 }
 
